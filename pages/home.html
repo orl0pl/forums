@@ -125,7 +125,29 @@
             width: 20px;
         }
         .popular {
+            margin: 8px;
             display: flex;
+            flex-direction: column;
+        }
+        .forumwidget {
+            display: flex;
+            flex-direction: column;
+            background-color: #ccc;
+            border-radius: 24px;
+            padding: 24px;
+        }
+        .forumwidget .top {
+            display: flex;
+            flex-direction: row;
+        }
+        .icon {
+            font-family: 'Material Symbols Outlined';
+        }
+        .forumwidget .title {
+            font-size: 24px;
+        }
+        .title .icon {
+            font-size: 150%;
         }
     </style>
 </head>
@@ -149,6 +171,17 @@
     </div>
     <div class="popular">
         <h3>Popular</h3>
+        <div class="forumwidget">
+            <div class="top">
+                <div class="title icon">savings</div>
+                <div class="title">title</div>
+                <div class="icon">more_vert</div>
+            </div>
+            <div class="mid">
+
+            </div>
+            <div class="bottom"></div>
+        </div>
     </div>
 </body>
 
