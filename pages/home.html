@@ -91,16 +91,18 @@
             align-items: center;
         }
 
-        .accountinfo .avatar {
+        .avatar {
+            display: flex;
             background: #9f0;
             width: 40px;
             height: 40px;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            margin-right: 4px;
         }
-
+        .avatar.title {
+            font-family: 'Material Symbols Outlined';
+        }
         .rheader .list {
             padding: 0 1vw;
             display: flex;
@@ -131,12 +133,14 @@
         }
         .forumwidget {
             display: flex;
+            width: 512px;
             flex-direction: column;
             background-color: #ccc;
             border-radius: 24px;
             padding: 24px;
         }
         .forumwidget .top {
+            gap: 10px;
             display: flex;
             flex-direction: row;
         }
@@ -144,10 +148,19 @@
             font-family: 'Material Symbols Outlined';
         }
         .forumwidget .title {
+            flex-grow: 7;
             font-size: 24px;
+            flex-basis: fit-content;
         }
-        .title .icon {
-            font-size: 150%;
+        .title.avatar {
+            flex-basis: 64px;
+            flex-grow: 0;
+            width: 64px;
+            height: 64px;
+            font-size: 300%;
+        }
+        .t24p {
+            font-size: 24px;
         }
     </style>
 </head>
@@ -173,9 +186,9 @@
         <h3>Popular</h3>
         <div class="forumwidget">
             <div class="top">
-                <div class="title icon">savings</div>
-                <div class="title">title</div>
-                <div class="icon">more_vert</div>
+                <div class="avatar title">savings</div>
+                <div class="title">How to sawings</div>
+                <div class="icon t24p">more_vert</div>
             </div>
             <div class="mid">
 
